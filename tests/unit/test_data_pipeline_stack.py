@@ -1,7 +1,7 @@
 import aws_cdk as core
 import aws_cdk.assertions as assertions
 
-from data_pipeline.data_pipeline_stack import DataPipelineStack
+from deploy.data_pipeline_stack import DataPipelineStack
 
 # example tests. To run these tests, uncomment this file along with the example
 # resource in data_pipeline/data_pipeline_stack.py

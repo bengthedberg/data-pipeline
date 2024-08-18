@@ -3,7 +3,7 @@ import os
 
 import aws_cdk as cdk
 
-from data_pipeline.data_pipeline_stack import DataPipelineStack
+from deploy.data_pipeline_stack import DataPipelineStack
 
 
 app = cdk.App()
@@ -24,5 +24,5 @@ DataPipelineStack(app, "DataPipelineStack",
 
     # For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html
     )
-
+cdk.Tags.of(app).add('owner', 'ml-team')
 app.synth()
